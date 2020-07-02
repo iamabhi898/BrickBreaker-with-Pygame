@@ -234,7 +234,7 @@ while True:
         ball.move()
         ball.boundries()
         ball.limit_vel()
-        # very interesting concept going on the fist inquality statement here ;)
+        #  must review code in the first inquality statement 
         if paddle.paddleY + 10 > (ball.ballY + ball.ball_radius) > paddle.paddleY and ball.ballX > paddle.paddleX and ball.ballX < (paddle.paddleX + paddle.length):
             ball.collision_change()
         # brick collision
